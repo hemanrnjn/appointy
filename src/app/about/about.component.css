@@ -1,0 +1,14 @@
+.about-header {
+  margin-top: 2%;
+  font-weight: 900;
+  font-size: 4em;
+  margin-bottom: 10%;
+}
+
+.about-footer {
+  margin-top:15%;
+}
+
+.btn-about {
+  border-radius: 30px;
+}

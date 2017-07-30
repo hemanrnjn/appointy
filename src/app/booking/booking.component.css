@@ -1,0 +1,67 @@
+.header-day {
+  margin-top: 2%;
+  font-weight: 900;
+  font-size: 2em;
+}
+
+.header-date {
+  font-weight: 900;
+  font-size: 3em;
+  margin-top:5%;
+}
+
+.header-year {
+  font-weight: 900;
+  font-size: 2em;
+}
+
+.card-calendar {
+  opacity: 0.9;
+  background-color: #1C2A48;
+}
+
+td, th {
+  border: 1px solid lightgrey;
+  height: 60px;
+  width: 70px;
+}
+
+td:hover {
+  border: 2.5px solid #1C2A48;
+}
+
+.btn-next {
+  margin-top: 3%;
+}
+
+.btn-previous {
+  margin-top: 3%;
+}
+
+.appoint-times {
+  overflow-y:scroll;
+  height:400px;
+}
+
+.btn-user-form {
+  background-color: #1C2A48;
+}
+
+.calendar-heading {
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.date-display {
+  background-color: #2E3951;
+}
+
+.no-appointment {
+  margin: 5%
+}
+
+.confirmation-data {
+  padding: 10px;
+  margin: 2%;
+}

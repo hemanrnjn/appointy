@@ -1,0 +1,13 @@
+.bg-black {
+  color: #1C2331;
+}
+
+.navigation {
+  float: right;
+}
+
+.brand-name {
+  font-size: 2em;
+  font-weight: 500;
+  font-family: "Seaweed Script";
+}

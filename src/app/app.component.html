@@ -1,0 +1,29 @@
+<nav class="navbar navbar-toggleable-md navbar-dark bg-black">
+  <div class="container">
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand brand-name" [routerLink]="['/home']">
+      <strong>DMCC</strong>
+    </a>
+    <div class="float-right">
+    <div class="collapse navbar-collapse navigation" id="navbarNav1">
+      <ul class="navbar-nav mr-auto">
+        <!--<li class="nav-item active">-->
+          <!--<a class="nav-link">Home <span class="sr-only">(current)</span></a>-->
+        <!--</li>-->
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/booking']">Schedule</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/about']">About</a>
+        </li>
+        <li class="nav-item" *ngIf="loggedUser">
+          <a class="nav-link" (click)="logout()">Logout</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>

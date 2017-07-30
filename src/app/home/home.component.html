@@ -1,0 +1,88 @@
+<div class="plate">
+  <p class="script"></p>
+  <p class="shadow text1 text-center">DMCC</p>
+  <p class="shadow text3 text-center">DAFZA</p>
+  <p class="script"></p>
+</div>
+
+<button class="btn btn-block home-component__button mx-auto" (click)="serviceChoice()">Book Your Appointment</button>
+
+
+<!--/.Content-->
+
+<div class="modal fade" id="services" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-info modal-lg" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <h2 class="heading lead font-weight-bold text-darken-4">Select Your Service</h2>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-darken-4">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+        <div class="text-center">
+          <div class="row">
+              <span class="col-lg-6">
+              <a class="btn btn-service" data-toggle="collapse" href="#business-development-list" aria-expanded="false"
+                 aria-controls="collapseExample">
+                BUSINESS DEVELOPMENT
+              </a>
+              </span>
+            <span class="col-lg-6">
+              <a class="btn btn-service" data-toggle="collapse" href="#member-service-list" aria-expanded="false"
+                 aria-controls="collapseExample">
+                MEMBER SERVICE EXECUTIVE (MSC)
+              </a>
+              </span>
+          </div>
+          <div id="business-development-list">
+            <div class="card card-block">
+              <!--Title-->
+              <h4 class="card-title text-center">Busniess Development Services</h4>
+              <!--Text-->
+              <div class="list-group">
+                <a (click)="toggle($event)" id="1" class="list-group-item list-group-item-success">
+                  <input type="checkbox" value="business_development_chk" id="business_development_chk" [(ngModel)]="services.business_development_chk"
+                         class="regular-checkbox" />  Business Development</a>
+                <a (click)="toggle($event)" id="2" class="list-group-item list-group-item-info">
+                  <input type="checkbox" value="account_executive_chk" id="account_executive_chk" [(ngModel)]="services.account_executive_chk"
+                         class="regular-checkbox" />Key Account Executive</a>
+              </div>
+            </div>
+            <!--/.Card content-->
+
+          </div>
+          <div id="member-service-list">
+            <div class="card card-block">
+              <h4 class="card-title text-center">Member Service Eecutive</h4>
+              <div class="list-group">
+                <a (click)="toggle($event)" id="3" class="list-group-item list-group-item-success">
+                  <input type="checkbox" value="registration_doc_chk" id="registration_doc_chk" [(ngModel)]="services.registration_doc_chk"
+                         class="regular-checkbox" />New Company Registration Doc Submission</a>
+                <label for="3">DMCC (Dubai Multi Commodities Centre) was established in 2002 as a strategic initiative of the government of Dubai with a mandate to provide the physical, market and financial infrastructure required to establish Dubai as a hub for global commodities trade.</label>
+                <a (click)="toggle($event)" id="4" class="list-group-item list-group-item-info">
+                  <input type="checkbox" value="license_doc_chk" id="license_doc_chk" [(ngModel)]="services.license_doc_chk"
+                         class="regular-checkbox" />New Company License Doc Submission</a>
+                <a (click)="toggle($event)" id="5" class="list-group-item list-group-item-warning">
+                  <input type="checkbox" value="general_enquiry_chk" [(ngModel)]="services.general_enquiry_chk"
+                         id="general_enquiry_chk" class="regular-checkbox" />General Enquiries</a>
+              </div>
+            </div>
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <a type="button" class="btn btn-service btn-default modal-action modal-close waves-effect waves-green"
+               (click)="servicesSelected()">Continue</a>
+          </div>
+        </div>
+        <!--/.Content-->
+      </div>
+    </div>
+  </div>
+</div>
